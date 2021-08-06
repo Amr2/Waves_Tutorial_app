@@ -12,7 +12,7 @@ export default function CurrMedia(props){
             <div className="contorller-cont">
                 <div className="time-controller">
                     <p>start time</p>
-                    <input type="range" id="Time_controller" />
+                    <input type="range" id="Time_controller"/>
                     <p>ending time</p>
                 </div>
                 <div className="options-controler">

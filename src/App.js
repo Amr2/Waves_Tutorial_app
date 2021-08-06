@@ -22,7 +22,7 @@ function App() {
     <main className ="Cont">
       <NavBar />
       <div className = "sctions">
-        <Library/>
+        <Library Media={media_list}/>
         <CurrMedia CurrMedia = { curr_media } />
       </div>
     </main>
