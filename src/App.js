@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Nav_bar from "./component/Nav_bar.Component";
+
 
 function App() {
+  // declration of Media list State 
+  const [media_list , Setmedia_list] = useState([]);
+  
+  // declration of Current running Media State 
+  const [curr_media , Setcurr_media] = useState()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav_bar/>
     </div>
   );
 }
