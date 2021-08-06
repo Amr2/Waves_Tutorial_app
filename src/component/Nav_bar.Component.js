@@ -1,5 +1,5 @@
 
-export default function Nav_bar(){
+export default function NavBar(props){
     return(
         <header>
             <h1>Waves</h1>

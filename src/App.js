@@ -1,17 +1,28 @@
 import { useState } from "react";
-import Nav_bar from "./component/Nav_bar.Component";
+
+// importing Component
+import NavBar from "./Component/Nav_bar.Component";
+import Library from "./Component/Library.Component";
+import CurrMedia from "./Component/Current_Media.Component";
+
+// importing Util Files
+import List from "./Utils/Media_list";
 
 
 function App() {
   // declration of Media list State 
-  const [media_list , Setmedia_list] = useState([]);
+  const [media_list , Getmedia_list] = useState(List());
   
   // declration of Current running Media State 
-  const [curr_media , Setcurr_media] = useState()
+  const [curr_media , Setcurr_media] = useState(2)
 
   return (
     <div>
-      <Nav_bar/>
+      <NavBar />
+      <main>
+        <Library/>
+        <CurrMedia/>
+      </main>
     </div>
   );
 }
