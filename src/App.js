@@ -23,7 +23,7 @@ function App() {
       <NavBar />
       <div className = "sctions">
         <Library/>
-        <CurrMedia/>
+        <CurrMedia CurrMedia = { curr_media } />
       </div>
     </main>
   );
