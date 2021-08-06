@@ -9,7 +9,7 @@ export default function CurrMedia(props){
             <div className="controller">
                 <p>start time</p>
                 <input type="range" id="Time_controller" />
-                <p>end time</p>
+                <p>ending time</p>
             </div>   
         </>
     )
