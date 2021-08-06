@@ -1,0 +1,19 @@
+@import "NavBar";
+@import "curr-media";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+.Cont{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sctions{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
