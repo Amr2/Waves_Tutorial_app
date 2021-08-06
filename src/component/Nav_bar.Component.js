@@ -1,7 +1,7 @@
 
 export default function NavBar(props){
-    return(
-        <header>
+    return( 
+        <header className = " Nav-bar" >
             <h1>Waves</h1>
             <button onClick ={()=>{
                 console.log("clicked")
