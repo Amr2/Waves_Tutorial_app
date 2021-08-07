@@ -11,6 +11,11 @@ import List from "./Utils/Media_list";
 
 
 function App() {
+
+    //  states
+  // isPlaying will help to detect if some media is playing or not
+  const [isPlaying , SetMediaState] = useState(false);
+
   // declration of Media list State 
   const [media_list , Getmedia_list] = useState(List());
   
@@ -23,7 +28,7 @@ function App() {
       <NavBar />
       <div className = "sctions">
         <Library Media={media_list}/>
-        <CurrMedia CurrMedia = { curr_media } />
+        <CurrMedia CurrMedia = { curr_media } isPlaying={isPlaying} SetMediaState={SetMediaState} />
       </div>
     </main>
   );
