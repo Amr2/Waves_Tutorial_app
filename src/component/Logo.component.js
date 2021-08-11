@@ -1,7 +1,8 @@
 export default function Svglogo(props) {
   return (
     <>
-      <svg
+      <svg 
+        className="logo"
         width="100"
         height="59"
         viewBox="0 0 100 59"
