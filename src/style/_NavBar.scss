@@ -1,15 +1,29 @@
 .Nav-bar{
-
+    transition: 300ms all ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding:  1rem 2rem;
-
+    & .logo{
+        transform: scale(.5);
+        transition: 300ms ease all;
+    }
     & button{
-        border: none;
+        border: solid  1px rgba(41, 41, 41, 0.5);
         outline: none;
-        font-size: 1rem;
+        font-size: .88rem;
+        padding: 1rem ;
+        font-weight: 600;
+        background: none;
+        border-radius: 15px;
         cursor: pointer;
+        transition: all ease 300ms;
+        transform: scale(.5);
+        &:hover, &:active{
+            background: rgb(41, 41, 41);
+            color: white;
+        }
+        
     }
 }

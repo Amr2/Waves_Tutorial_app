@@ -1,6 +1,7 @@
 @import "NavBar";
 @import "curr-media";
 @import "library";
+@import "Queries";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
@@ -9,6 +10,7 @@
     margin: 0;
     box-sizing: border-box;  
     font-family: 'Montserrat', sans-serif;
+    transition: all 500ms ease;
 }
 
 .Cont{
@@ -23,12 +25,9 @@
     align-items: flex-start;
     width: 100%;
     height: calc(100% - 80px);
-    & .media-cont {
-        height: 100%;
-        transition: all 500ms ease;
-    }
-    & .library-cont{
-        height: 100%;
-        transition: all 500ms ease;
-    }
+    transition: all ease 500ms;
+}
+
+.lib_display_anim{
+    margin-left: 30%;
 }

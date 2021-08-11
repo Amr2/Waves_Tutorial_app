@@ -1,0 +1,52 @@
+@media all and (min-width: 500px) {
+  .media-info {
+    & img {
+      width: 60%;
+    }
+  }
+  .options-controler {
+    padding: 0.5rem 1rem;
+  }
+  .Nav-bar {
+    & .logo {
+      transform: scale(0.8);
+    }
+    & button {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media all and (min-width: 700px) {
+  .media-info {
+    & img {
+      width: 40%;
+    }
+  }
+  .options-controler {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .media-info {
+    & img {
+      width: 20%;
+    }
+  }
+  .Nav-bar {
+    justify-content: space-around;
+    & .logo {
+      transform: scale(1);
+    }
+    & button {
+      transform: scale(1);
+    }
+  }
+  .contorller-cont {
+    width: 50%;
+  }
+  .options-controler {
+    padding: 1.5rem 1rem;
+  }
+}

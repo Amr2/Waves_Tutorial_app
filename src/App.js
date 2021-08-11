@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./style/stlye.scss";
 
 // importing Component
@@ -21,18 +21,42 @@ function App() {
   // declration of Current running Media State
   const [curr_media, Setcurr_media] = useState(media_list[0]);
 
+  // display library component
+  const [display_lib, Set_apper] = useState(false);
+
+  // config the audio help on run the media
+  const Media_audio = useRef(null);
+
   return (
-    <main className="Cont">
-      <NavBar />
-      <div className="sctions">
-        <Library Media={media_list} />
-        <CurrMedia
-          CurrMedia={curr_media}
-          isPlaying={isPlaying}
-          SetMediaState={SetMediaState}
-        />
-      </div>
-    </main>
+    <>
+      <main className={`Cont ${display_lib ? "lib_display_anim" : ""}`}>
+        <NavBar display_lib={display_lib} Set_apper={Set_apper} />
+        <div className={`sctions`}>
+          <CurrMedia
+            media_list={media_list}
+            Media_audio={Media_audio}
+            CurrMedia={curr_media}
+            Setcurr_media={Setcurr_media}
+            isPlaying={isPlaying}
+            display_lib={display_lib}
+            Set_apper={Set_apper}
+            SetMediaState={SetMediaState}
+            Getmedia_list={Getmedia_list}
+          />
+        </div>
+      </main>
+      <Library
+        Media={media_list}
+        setcurr_media={Setcurr_media}
+        Curr_media={curr_media}
+        Media_audio={Media_audio}
+        SetMediaState={SetMediaState}
+        display_lib={display_lib}
+        Getmedia_list={Getmedia_list}
+        Set_apper={Set_apper}
+        isPlaying={isPlaying}
+      />
+    </>
   );
 }
 
