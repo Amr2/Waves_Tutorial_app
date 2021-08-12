@@ -2,7 +2,7 @@
   transition: all 500ms ease;
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 30%;
   gap: 2rem;
   justify-content: flex-start;
   align-items: center;
@@ -16,7 +16,17 @@
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background:#5c5c5c;
+  };
+  &::-webkit-scrollbar-track{
+    background: transparent;
+  }
 }
+
 .displaylib{
   transform: translateX(0%);
   opacity: 1;
